@@ -95,7 +95,7 @@
     "presets": [
       "react-app"
     ],
-    "plugins": ["transform-react-pug", "transform-react-jsx", "react-pug"]
+    "plugins": ["transform-react-pug", "transform-react-jsx"]
   },
   "eslintConfig": {
     "extends": "react-app"
