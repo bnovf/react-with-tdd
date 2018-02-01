@@ -1,6 +1,9 @@
 /* config-overrides.js to help us configure webpack while not ejecting*/
 
+const { injectBabelPlugin } = require('react-app-rewired')
+
 module.exports = function override(config, env) {
-  //do stuff with the webpack config...
-  return config;
+	// add  plugins
+	config = injectBabelPlugin(['transform-react-pug', 'transform-react-pug'], config)
+  return config
 }
