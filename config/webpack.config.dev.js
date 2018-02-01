@@ -96,9 +96,6 @@ module.exports = {
       // please link the files into your node_modules/ and let module-resolution kick in.
       // Make sure your source files are compiled, as they will not be processed in any way.
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
-      'transform-react-pug',
-      'transform-react-jsx',
-      'react-pug'
     ],
   },
   module: {
@@ -212,9 +209,7 @@ module.exports = {
       // ** STOP ** Are you adding a new loader?
       // Make sure to add the new loader(s) before the "file" loader.
     ],
-    extends: [
-      'plugin:react-pug/all'
-  ]
+
   },
   plugins: [
     // Makes some environment variables available in index.html.
