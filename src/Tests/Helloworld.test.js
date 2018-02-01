@@ -7,8 +7,7 @@ import Adapter from 'enzyme-adapter-react-16'
 // setup enzyme
 configure({ adapter: new Adapter() })
 
-it('should render a paragraph text "Hello, World"', () => {
-  const paragraph = 'Hello, world'
+it('should render a paragraph text "Hello, world"', () => {
   const wrapper = shallow(<HelloWorld />)
-  expect(wrapper.text()).toEqual('important');
+  expect(wrapper.text()).toEqual('Hello, world');
 })
