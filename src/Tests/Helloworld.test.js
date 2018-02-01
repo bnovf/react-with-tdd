@@ -10,5 +10,5 @@ configure({ adapter: new Adapter() })
 it('should render a paragraph text "Hello, World"', () => {
   const paragraph = 'Hello, world'
   const wrapper = shallow(<HelloWorld />)
-  expect(wrapper.find('p').length).toEqual(paragraph.length) // 12
+  expect(wrapper.text()).toEqual('important');
 })
