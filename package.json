@@ -98,6 +98,10 @@
     "plugins": ["transform-react-pug", "transform-react-jsx"]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "plugins": ["react-pug"],
+    "globals": {
+      "pug": true
+    }
   }
 }
