@@ -8,12 +8,7 @@ configure({ adapter: new Adapter() })
 
 // test paragraph
 it('should render a paragraph text "Hello, world"', () => {
-  const wrapper = shallow(<HelloWorld />) // shallow rendering
-  expect(wrapper.text()).toEqual('Hello, world')
-})
-// test button
-it('should render a button from styled-components', () => {
-  const Button = styledComponents.button
-  const mounted = mount(<Button />) // fullDOM rendering
-  expect(mounted.find(<Button />).exists()).toEqual(true)
+  const wrapper = mount(pug`HelloWorld`) // shallow rendering
+  expect(wrapper.find('p').text()).toEqual('Hello, world')
+  expect(wrapper.find('button')).toBePresent()
 })

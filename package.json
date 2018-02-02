@@ -56,6 +56,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint-plugin-react-pug": "^0.1.0",
+    "jest-enzyme": "^4.1.1",
     "react-app-rewired": "^1.4.1"
   },
   "jest": {
@@ -90,6 +91,12 @@
       "web.jsx",
       "jsx",
       "node"
+    ],
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme",
+      "jest-enzyme"
     ]
   },
   "babel": {
